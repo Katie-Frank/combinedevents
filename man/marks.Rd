@@ -29,7 +29,7 @@ in \code{marks} are \code{`100m`}, \code{LJ}, \code{SP}, \code{HJ}, \code{`400m`
 \item{seconds}{a logical; if \code{TRUE}, will return all track event marks in seconds}
 }
 \value{
-A list of class "\code{combined_events}" (or "\code{combined_events_NULL}" if \code{combined_event = NULL}) with
+A list of class "\code{combined_events}" (or "\code{combined_events_null}" if \code{combined_event = NULL}) with
 the following fields:
 \item{results}{if called with non-NULL \code{combined_event}, a data frame with
 columns for the specified combined event containing the names of those events, \code{mark}

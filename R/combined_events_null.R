@@ -11,8 +11,8 @@ combined_events_null.default <- function(marks, scores, event_names, seconds, ..
   result <- list(results = data.frame(event = event_names,
                                       mark = unlist(marks),
                                       score = scores),
-                 marks = setNames(unlist(marks), event_names),
-                 scores = setNames(scores, event_names))
+                 marks = stats::setNames(unlist(marks), event_names),
+                 scores = stats::setNames(scores, event_names))
   class(result) <- "combined_events_null"
   result
 }

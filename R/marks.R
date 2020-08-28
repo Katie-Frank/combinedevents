@@ -33,7 +33,7 @@
 #' possible (due to rounding). In other words, not every input score is associated
 #' with a unique mark. When this is the case, \code{marks()} will return the highest
 #' score corresponding to that mark.
-#' @return A list of class "\code{combined_events}" (or "\code{combined_events_NULL}" if \code{combined_event = NULL}) with
+#' @return A list of class "\code{combined_events}" (or "\code{combined_events_null}" if \code{combined_event = NULL}) with
 #'   the following fields:
 #'   \item{results}{if called with non-NULL \code{combined_event}, a data frame with
 #'   columns for the specified combined event containing the names of those events, \code{mark}
@@ -65,7 +65,7 @@
 #'       "male")
 marks <- function(scores, gender, combined_event = NULL, seconds = FALSE){
   if (!class(scores) %in% c("integer", "numeric")) {
-    stop("`scores` should be an integer or numeric vector")
+    stop("`scores` must be an integer or numeric vector")
   }
   if (any(scores < 0 & !is.na(scores))) {
     stop("Invalid entry for `scores`: negative score(s) not allowed")
@@ -82,10 +82,10 @@ marks <- function(scores, gender, combined_event = NULL, seconds = FALSE){
                                            "110mH", "DT", "PV", "JT", "1500m", "200m", "60m", "60mH", "1000m"))) {
         stop("One or more invalid names for `scores`")
       } else {
-        marks <- mapply(rlang::exec, paste0(names(scores), "_men_mark"), scores)
+        marks <- mapply(exec_fun, paste0(names(scores), "_men_mark"), scores)
         names(marks) <- names(scores)
-        scores <- mapply(rlang::exec, paste0(names(scores), "_men"), marks) %>%
-          combined_events_null(marks, ., names(marks), seconds)
+        scores <- mapply(exec_fun, paste0(names(scores), "_men"), marks) %>%
+          combined_events_null(marks, names(marks), seconds)
       }
     } else if (!(combined_event %in% c("decathlon", "outdoor decathlon",
                                        "outdoor pentathlon", "heptathlon", "indoor heptathlon",
@@ -108,10 +108,10 @@ marks <- function(scores, gender, combined_event = NULL, seconds = FALSE){
                                            "100mH", "DT", "PV", "JT", "1500m", "200m", "60mH", "800m"))) {
         stop("One or more invalid names for `scores`")
       } else {
-        marks <- mapply(rlang::exec, paste0(names(scores), "_women_mark"), scores)
+        marks <- mapply(exec_fun, paste0(names(scores), "_women_mark"), scores)
         names(marks) <- names(scores)
-        scores <- mapply(rlang::exec, paste0(names(scores), "_women"), marks) %>%
-          combined_events_null(marks, ., names(marks), seconds)
+        scores <- mapply(exec_fun, paste0(names(scores), "_women"), marks) %>%
+          combined_events_null(marks, names(marks), seconds)
       }
     } else if (!(combined_event %in% c("heptathlon", "outdoor heptathlon", "decathlon",
                                        "outdoor decathlon", "pentathlon",

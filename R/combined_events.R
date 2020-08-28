@@ -12,8 +12,8 @@ combined_events.default <- function(marks, scores, event_names, event, seconds, 
   result <- list(results = data.frame(event = c(event_names, "TOTAL"),
                                       mark = c(unlist(marks), NA),
                                       score = c(scores, total)),
-                 marks = setNames(unlist(marks), event_names),
-                 scores = setNames(scores, event_names),
+                 marks = stats::setNames(unlist(marks), event_names),
+                 scores = stats::setNames(scores, event_names),
                  score_total = total)
   names(result$results)[1] <- event
   class(result) <- "combined_events"

@@ -22,7 +22,7 @@
 #'   }
 #' @param seconds a logical; if \code{TRUE}, will return all track event marks in seconds
 #'
-#' @return A list of class "\code{combined_events}" (or "\code{combined_events_NULL}" if \code{combined_event = NULL}) with
+#' @return A list of class "\code{combined_events}" (or "\code{combined_events_null}" if \code{combined_event = NULL}) with
 #'   the following fields:
 #'   \item{results}{if called with non-NULL \code{combined_event}, a data frame with
 #'   columns for the specified combined event containing the names of those events, \code{mark}
@@ -58,7 +58,7 @@
 #'        gender = "male")
 scores <- function(marks, gender, combined_event = NULL, seconds = FALSE){
   if (!class(marks) %in% c("numeric", "character")) {
-    stop("`marks` should be a numeric or character vector")
+    stop("`marks` must be a numeric or character vector")
   }
   if (any(marks < 0 & !is.na(marks))) {
     stop("Invalid entry for `marks`: negative mark(s) not allowed")
@@ -78,8 +78,8 @@ scores <- function(marks, gender, combined_event = NULL, seconds = FALSE){
                                           "110mH", "DT", "PV", "JT", "1500m", "200m", "60m", "60mH", "1000m"))) {
         stop("One or more invalid names for `marks`")
       } else {
-        scores <- mapply(rlang::exec, paste0(names(marks), "_men"), marks) %>%
-          combined_events_null(marks, ., names(marks), seconds)
+        scores <- mapply(exec_fun, fn = paste0(names(marks), "_men"), x = marks) %>%
+          combined_events_null(marks, names(marks), seconds)
       }
     } else if (!(combined_event %in% c("decathlon", "outdoor decathlon",
                                        "outdoor pentathlon", "heptathlon", "indoor heptathlon",
@@ -102,8 +102,8 @@ scores <- function(marks, gender, combined_event = NULL, seconds = FALSE){
                                           "100mH", "DT", "PV", "JT", "1500m", "200m", "60mH", "800m"))) {
         stop("One or more invalid names for `marks`")
       } else {
-        scores <- mapply(rlang::exec, paste0(names(marks), "_women"), marks) %>%
-          combined_events_null(marks, ., names(marks), seconds)
+        scores <- mapply(exec_fun, fn = paste0(names(marks), "_women"), x = marks) %>%
+          combined_events_null(marks, names(marks), seconds)
       }
     } else if (!(combined_event %in% c("heptathlon", "outdoor heptathlon", "decathlon",
                                        "outdoor decathlon", "pentathlon",
@@ -119,4 +119,8 @@ scores <- function(marks, gender, combined_event = NULL, seconds = FALSE){
   }
   scores$call <- match.call()
   scores
+}
+
+exec_fun <- function(fn, x) {
+  rlang::exec(fn, x)
 }

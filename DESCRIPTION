@@ -19,6 +19,7 @@ Imports:
     lubridate,
     magrittr,
     rlang,
+    stats,
     stringr
 Suggests: 
     knitr,
