@@ -2,17 +2,39 @@
 % Please edit documentation in R/combined_events.R
 \name{combined_events}
 \alias{combined_events}
+\alias{combined_events.default}
 \title{Combined events results}
 \usage{
 combined_events(marks, scores, event_names, event, seconds, ...)
+
+\method{combined_events}{default}(marks, scores, event_names, event, seconds, ...)
 }
 \arguments{
-\item{...}{}
+\item{marks}{a numeric vectors of marks}
+
+\item{scores}{an integer vector of scores}
+
+\item{event_names}{a character vector of event names}
+
+\item{event}{a character string indicating the combined events competition}
+
+\item{seconds}{a double (either 0 or 1)}
+
+\item{...}{other arguments passed on to methods}
 }
 \value{
-An object of class "\code{combined_events}"
+An object of class "\code{combined_events}".
+The default method returns a list of that class.
 }
 \description{
 \code{combined_events()} is a generic function used to present results
 of calls to \code{\link[=scores]{scores()}} and \code{\link[=marks]{marks()}}.
+}
+\details{
+The default method of the generic function
+\code{combined_events()} presents the results of calls to
+\code{\link[=scores]{scores()}} and \code{\link[=marks]{marks()}} in a list.
+}
+\seealso{
+\code{\link[=scores]{scores()}}, \code{\link[=marks]{marks()}}
 }

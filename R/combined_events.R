@@ -3,20 +3,37 @@
 #' \code{combined_events()} is a generic function used to present results
 #' of calls to \code{\link[=scores]{scores()}} and \code{\link[=marks]{marks()}}.
 #'
-#' @param marks
-#' @param scores
-#' @param event_names
-#' @param event
-#' @param seconds
-#' @param ...
+#' @param marks a numeric vectors of marks
+#' @param scores an integer vector of scores
+#' @param event_names a character vector of event names
+#' @param event a character string indicating the combined events competition
+#' @param seconds a double (either 0 or 1)
+#' @param ... other arguments passed on to methods
 #'
-#' @return An object of class "\code{combined_events}"
+#' @return An object of class "\code{combined_events}".
+#' The default method returns a list of that class.
+#' @seealso \code{\link[=scores]{scores()}}, \code{\link[=marks]{marks()}}
 #' @export
 #'
 combined_events <- function(marks, scores, event_names, event, seconds, ...){
   UseMethod("combined_events")
 }
 
+
+#' Default method for combined events results
+#'
+#' @param marks a numeric vectors of marks
+#' @param scores an integer vector of scores
+#' @param event_names a character vector of event names
+#' @param event a character string indicating the combined events competition
+#' @param seconds a double (either 0 or 1)
+#' @param ... other arguments passed on to methods
+#'
+#' @details The default method of the generic function
+#' \code{combined_events()} presents the results of calls to
+#' \code{\link[=scores]{scores()}} and \code{\link[=marks]{marks()}} in a list.
+#' @rdname combined_events
+#' @method combined_events default
 #' @export
 combined_events.default <- function(marks, scores, event_names, event, seconds, ...){
   total <- sum(scores, na.rm = TRUE)
