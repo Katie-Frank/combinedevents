@@ -7,7 +7,7 @@
 marks(scores, gender, combined_event = NULL, seconds = FALSE)
 }
 \arguments{
-\item{scores}{an integer or numeric vector of track and field scores}
+\item{scores}{a numeric vector of track and field scores}
 
 \item{gender}{gender of athlete; either "\code{male}" or "\code{female}"}
 
@@ -53,7 +53,7 @@ This function evolved from the IAAF Scoring Tables for Combined Events.
 }
 \details{
 \code{marks()} can be thought of as the inverse function of \code{\link[=scores]{scores()}}: you
-give it the scores you want to obtain and it gives you the marks you
+give it the scores you want to obtain, and it gives you the marks you
 need to achieve those scores.
 
 For track events, \code{marks()} returns the slowest time needed to achieve the

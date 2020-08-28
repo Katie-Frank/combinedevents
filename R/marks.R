@@ -3,7 +3,7 @@
 #' \code{marks()} calculates marks for track and field combined events competitions.
 #' This function evolved from the IAAF Scoring Tables for Combined Events.
 #'
-#' @param scores an integer or numeric vector of track and field scores
+#' @param scores a numeric vector of track and field scores
 #' @param gender gender of athlete; either "\code{male}" or "\code{female}"
 #' @param combined_event an optional character string indicating the
 #'   combined events competition. For \code{gender = "male"}, the options are
@@ -21,7 +21,7 @@
 #'   }
 #' @param seconds a logical; if \code{TRUE}, will return all track event marks in seconds
 #' @details \code{marks()} can be thought of as the inverse function of \code{\link[=scores]{scores()}}: you
-#' give it the scores you want to obtain and it gives you the marks you
+#' give it the scores you want to obtain, and it gives you the marks you
 #' need to achieve those scores.
 #'
 #' For track events, \code{marks()} returns the slowest time needed to achieve the
@@ -64,8 +64,8 @@
 #' marks(scores = c(LJ = 790, LJ = 810, HJ = 850, HJ = 900, PV = 900, PV = 915),
 #'       "male")
 marks <- function(scores, gender, combined_event = NULL, seconds = FALSE){
-  if (!class(scores) %in% c("integer", "numeric")) {
-    stop("`scores` must be an integer or numeric vector")
+  if (!typeof(scores) %in% c("integer", "double")) {
+    stop("`scores` must be a numeric vector")
   }
   if (any(scores < 0 & !is.na(scores))) {
     stop("Invalid entry for `scores`: negative score(s) not allowed")

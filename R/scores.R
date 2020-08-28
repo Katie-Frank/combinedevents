@@ -57,7 +57,7 @@
 #'          "60mH" = 8.30, "60mH" = 9.31, PV = 4.30, "1000m" = "2:40.00"),
 #'        gender = "male")
 scores <- function(marks, gender, combined_event = NULL, seconds = FALSE){
-  if (!class(marks) %in% c("numeric", "character")) {
+  if (!typeof(marks) %in% c("integer", "double", "character")) {
     stop("`marks` must be a numeric or character vector")
   }
   if (any(marks < 0 & !is.na(marks))) {
