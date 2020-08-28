@@ -64,7 +64,7 @@
 #' marks(scores = c(LJ = 790, LJ = 810, HJ = 850, HJ = 900, PV = 900, PV = 915),
 #'       "male")
 marks <- function(scores, gender, combined_event = NULL, seconds = FALSE){
-  if (!typeof(scores) %in% c("integer", "double")) {
+  if (!class(scores) %in% c("integer", "numeric")) {
     stop("`scores` must be a numeric vector")
   }
   if (any(scores < 0 & !is.na(scores))) {
