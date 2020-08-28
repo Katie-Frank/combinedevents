@@ -85,7 +85,7 @@ marks <- function(scores, gender, combined_event = NULL, seconds = FALSE){
         marks <- mapply(exec_fun, paste0(names(scores), "_men_mark"), scores)
         names(marks) <- names(scores)
         scores <- mapply(exec_fun, paste0(names(scores), "_men"), marks) %>%
-          combined_events_null(marks, names(marks), seconds)
+          combined_events_null(marks = marks, event_names = names(marks), seconds = seconds)
       }
     } else if (!(combined_event %in% c("decathlon", "outdoor decathlon",
                                        "outdoor pentathlon", "heptathlon", "indoor heptathlon",
@@ -111,7 +111,7 @@ marks <- function(scores, gender, combined_event = NULL, seconds = FALSE){
         marks <- mapply(exec_fun, paste0(names(scores), "_women_mark"), scores)
         names(marks) <- names(scores)
         scores <- mapply(exec_fun, paste0(names(scores), "_women"), marks) %>%
-          combined_events_null(marks, names(marks), seconds)
+          combined_events_null(marks = marks, event_names = names(marks), seconds = seconds)
       }
     } else if (!(combined_event %in% c("heptathlon", "outdoor heptathlon", "decathlon",
                                        "outdoor decathlon", "pentathlon",

@@ -79,7 +79,7 @@ scores <- function(marks, gender, combined_event = NULL, seconds = FALSE){
         stop("One or more invalid names for `marks`")
       } else {
         scores <- mapply(exec_fun, fn = paste0(names(marks), "_men"), x = marks) %>%
-          combined_events_null(marks, names(marks), seconds)
+          combined_events_null(marks = marks, event_names = names(marks), seconds = seconds)
       }
     } else if (!(combined_event %in% c("decathlon", "outdoor decathlon",
                                        "outdoor pentathlon", "heptathlon", "indoor heptathlon",
@@ -103,7 +103,7 @@ scores <- function(marks, gender, combined_event = NULL, seconds = FALSE){
         stop("One or more invalid names for `marks`")
       } else {
         scores <- mapply(exec_fun, fn = paste0(names(marks), "_women"), x = marks) %>%
-          combined_events_null(marks, names(marks), seconds)
+          combined_events_null(marks = marks, event_names = names(marks), seconds = seconds)
       }
     } else if (!(combined_event %in% c("heptathlon", "outdoor heptathlon", "decathlon",
                                        "outdoor decathlon", "pentathlon",

@@ -1,4 +1,18 @@
+#' Combined events results
+#'
+#' \code{combined_events()} is a generic function used to present results
+#' of calls to \code{\link[=scores]{scores()}} and \code{\link[=marks]{marks()}}.
+#'
+#' @param marks
+#' @param scores
+#' @param event_names
+#' @param event
+#' @param seconds
+#' @param ...
+#'
+#' @return An object of class "\code{combined_events}"
 #' @export
+#'
 combined_events <- function(marks, scores, event_names, event, seconds, ...){
   UseMethod("combined_events")
 }
