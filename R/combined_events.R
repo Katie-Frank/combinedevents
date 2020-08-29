@@ -7,7 +7,7 @@
 #' @param scores an integer vector of scores
 #' @param event_names a character vector of event names
 #' @param event a character string indicating the combined events competition
-#' @param seconds a double (either 0 or 1)
+#' @param seconds a numeric (either 0 or 1)
 #' @param ... other arguments passed on to methods
 #'
 #' @return An object of class "\code{combined_events}".
@@ -26,7 +26,7 @@ combined_events <- function(marks, scores, event_names, event, seconds, ...){
 #' @param scores an integer vector of scores
 #' @param event_names a character vector of event names
 #' @param event a character string indicating the combined events competition
-#' @param seconds a double (either 0 or 1)
+#' @param seconds a numeric (either 0 or 1)
 #' @param ... other arguments passed on to methods
 #'
 #' @details The default method of the generic function

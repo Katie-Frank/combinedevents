@@ -18,7 +18,7 @@ combined_events(marks, scores, event_names, event, seconds, ...)
 
 \item{event}{a character string indicating the combined events competition}
 
-\item{seconds}{a double (either 0 or 1)}
+\item{seconds}{a numeric (either 0 or 1)}
 
 \item{...}{other arguments passed on to methods}
 }
