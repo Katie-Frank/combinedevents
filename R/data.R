@@ -1,0 +1,20 @@
+#' Men's decathlon performances
+#'
+#' A dataset containing the performances of 23 athletes in the
+#' men's decathlon at the 2016 Summer Olympics.
+#'
+#' @format A data frame with 23 rows and 24 variables. The variables
+#' \code{`100m`}, \code{LJ}, \code{SP}, \code{HJ}, \code{`400m`}, \code{`110mH`},
+#' \code{DT}, \code{PV}, \code{JT}, and \code{`1500m`} correspond to the performances
+#' of the athletes for the ten events comprising the decathlon. Those
+#' variables ending in \code{_p} (e.g., \code{`100m_p`}) represent the
+#' points athletes earn for their performances in each of the ten events.
+#' The first four columns are the variables
+#' \describe{
+#'   \item{rank}{rank of athlete}
+#'   \item{athlete}{name of athlete}
+#'   \item{nationality}{nationality of athlete}
+#'   \item{score_total}{overall score}
+#' }
+#' @source \url{https://en.wikipedia.org/wiki/Athletics_at_the_2016_Summer_Olympics_–_Men%27s_decathlon}
+"dec"
