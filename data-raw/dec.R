@@ -2,6 +2,7 @@
 library(rvest)
 library(tidyr)
 library(dplyr)
+library(textclean)
 
 rio_dec <- read_html("https://en.wikipedia.org/wiki/Athletics_at_the_2016_Summer_Olympics_%E2%80%93_Men%27s_decathlon")
 
@@ -50,4 +51,7 @@ dec <- dec %>%
 dec <- dec %>%
   mutate(across(c(`100m`, SP, DT, PV), as.double))
 
+# replace non-ASCII characters
+dec <- dec %>%
+  mutate(athlete = replace_non_ascii(athlete))
 usethis::use_data(dec, overwrite = TRUE)
