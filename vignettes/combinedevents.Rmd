@@ -1,7 +1,7 @@
 ---
 title: "Introduction to combinedevents"
 author: "Katie Frank"
-date: "August 21, 2020"
+date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{combinedevents}
@@ -16,7 +16,10 @@ knitr::opts_chunk$set(
 )
 ```
 
-blah
+# Introduction
+
+The 
+
 
 
 ```{r setup}
