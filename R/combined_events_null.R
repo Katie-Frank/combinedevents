@@ -33,7 +33,6 @@ combined_events_null <- function(marks, scores, event_names, seconds, ...){
 #' @method combined_events_null default
 #' @export
 combined_events_null.default <- function(marks, scores, event_names, seconds, ...){
-  browser()
   if (seconds == FALSE) {
     marks <- mapply(num_to_char, marks, event_names)
   }
