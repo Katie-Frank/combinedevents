@@ -2,12 +2,9 @@
 % Please edit documentation in R/combined_events_null.R
 \name{combined_events_null}
 \alias{combined_events_null}
-\alias{combined_events_null.default}
 \title{Combined events null results}
 \usage{
 combined_events_null(marks, scores, event_names, seconds, ...)
-
-\method{combined_events_null}{default}(marks, scores, event_names, seconds, ...)
 }
 \arguments{
 \item{marks}{a numeric vector of marks}
@@ -28,11 +25,6 @@ The default method returns a list of that class.
 \code{combined_events_null()} is a generic function used to present results
 of calls to \code{\link[=scores]{scores()}} and \code{\link[=marks]{marks()}}
 where in those calls \code{combined_event = NULL}.
-}
-\details{
-The default method of the generic function
-\code{combined_events_null()} presents the results of calls to
-\code{\link[=scores]{scores()}} and \code{\link[=marks]{marks()}} in a list.
 }
 \seealso{
 \code{\link[=scores]{scores()}}, \code{\link[=marks]{marks()}}

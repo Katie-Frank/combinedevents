@@ -2,12 +2,9 @@
 % Please edit documentation in R/combined_events.R
 \name{combined_events}
 \alias{combined_events}
-\alias{combined_events.default}
 \title{Combined events results}
 \usage{
 combined_events(marks, scores, event_names, event, seconds, ...)
-
-\method{combined_events}{default}(marks, scores, event_names, event, seconds, ...)
 }
 \arguments{
 \item{marks}{a numeric vectors of marks}
@@ -29,11 +26,6 @@ The default method returns a list of that class.
 \description{
 \code{combined_events()} is a generic function used to present results
 of calls to \code{\link[=scores]{scores()}} and \code{\link[=marks]{marks()}}.
-}
-\details{
-The default method of the generic function
-\code{combined_events()} presents the results of calls to
-\code{\link[=scores]{scores()}} and \code{\link[=marks]{marks()}} in a list.
 }
 \seealso{
 \code{\link[=scores]{scores()}}, \code{\link[=marks]{marks()}}

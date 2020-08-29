@@ -18,19 +18,6 @@ combined_events_null <- function(marks, scores, event_names, seconds, ...){
   UseMethod("combined_events_null")
 }
 
-#' Default method for combined events null results
-#'
-#' @param marks a numeric vector of marks
-#' @param scores an integer vector of scores
-#' @param event_names a character vector of event names
-#' @param seconds a numeric (either 0 or 1)
-#' @param ... other arguments passed on to methods
-#'
-#' @details The default method of the generic function
-#' \code{combined_events_null()} presents the results of calls to
-#' \code{\link[=scores]{scores()}} and \code{\link[=marks]{marks()}} in a list.
-#' @rdname combined_events_null
-#' @method combined_events_null default
 #' @export
 combined_events_null.default <- function(marks, scores, event_names, seconds, ...){
   if (seconds == FALSE) {
