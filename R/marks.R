@@ -70,7 +70,10 @@ marks <- function(scores, gender, combined_event = NULL, seconds = FALSE){
   if (any(scores < 0 & !is.na(scores))) {
     stop("Invalid entry for `scores`: negative score(s) not allowed")
   }
-  if(!isTRUE(all.equal(round(scores), scores))) {
+  if (!(seconds %in% c(TRUE, FALSE, T, F))) {
+    stop("Invalid entry for `seconds`")
+  }
+  if (!isTRUE(all.equal(round(scores), scores))) {
     message("One or more entries of `scores` have been rounded to the nearest integer")
     scores <- round(scores)
   }
