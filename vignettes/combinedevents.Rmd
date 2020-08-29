@@ -1,5 +1,5 @@
 ---
-title: "Introduction to combinedevents"
+title: "Using combinedevents"
 author: "Katie Frank"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
@@ -15,12 +15,6 @@ knitr::opts_chunk$set(
   comment = "#>"
 )
 ```
-
-# Introduction
-
-The 
-
-
 
 ```{r setup}
 library(combinedevents)
