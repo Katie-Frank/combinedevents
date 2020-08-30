@@ -54,4 +54,5 @@ dec <- dec %>%
 # replace non-ASCII characters
 dec <- dec %>%
   mutate(athlete = replace_non_ascii(athlete))
+
 usethis::use_data(dec, overwrite = TRUE)
