@@ -5,7 +5,7 @@
 #' field combined events competitions. The functions are based on the IAAF
 #' Scoring Tables for Combined Events.
 #'
-#' @author **Maintainer**: Katie Frank \email{katiexfrank@gmail.com}
+#' @author **Maintainer**: Katie Frank \email{katiexfrank@@gmail.com}
 #'
 #' @seealso Useful links:
 #' \itemize{
