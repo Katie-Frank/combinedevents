@@ -6,7 +6,7 @@ Authors@R:
            family = "Frank",
            role = c("aut", "cre"),
            email = "katiexfrank@gmail.com",
-           comment = c(ORCID = "https://orcid.org/0000-0002-0353-0328"))
+           comment = c(ORCID = "0000-0002-0353-0328"))
 Description: Includes functions to calculate scores and marks for track and
     field combined events competitions. The functions are based on the IAAF
     Scoring Tables for Combined Events.
