@@ -14,8 +14,8 @@
 #'   "\code{decathlon}"/"\code{outdoor decathlon}", and "\code{pentathlon}"/"\code{indoor pentathlon}".
 #'   If \code{combined_event = NULL}, the elements of \code{marks} must be named.
 #'   \itemize{
-#'     \item For \code{gender = "male"}, the allowed names for the performances
-#'     in \code{marks} are \code{`100m`}, \code{LJ}, \code{SP}, \code{HJ}, \code{`400m`}, \code{`110mH`}, \code{DT}, \code{PV}, \code{JT}, \code{`1500m`},
+#'     \item For \code{gender = "male"}, the allowed names for the elements
+#'     of \code{marks} are \code{`100m`}, \code{LJ}, \code{SP}, \code{HJ}, \code{`400m`}, \code{`110mH`}, \code{DT}, \code{PV}, \code{JT}, \code{`1500m`},
 #'     \code{`200m`}, \code{`60m`}, \code{`60mH`}, and \code{`1000m`}.
 #'     \item For \code{gender = "female"}, the allowed names are \code{`100m`}, \code{LJ},
 #'     \code{SP}, \code{HJ}, \code{`400m`}, \code{`100mH`}, \code{DT}, \code{PV}, \code{JT}, \code{`1500m`}, \code{`200m`}, \code{`60mH`}, and \code{`800m`}.
