@@ -15,4 +15,5 @@
 #'
 #' @docType package
 #' @name combinedevents
+#' @importFrom magrittr %>%
 NULL

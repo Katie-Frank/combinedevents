@@ -40,7 +40,6 @@
 #'   for the specified combined events competition}
 #'   \item{call}{the matched call}
 #' @export
-#' @importFrom magrittr %>%
 #' @examples
 #' # Men's decathlon
 #' scores(marks = c("100m" = 11.61, LJ = 7.32, SP = 13.17, HJ = 1.9,
