@@ -7,8 +7,8 @@
 
 [![CRAN
 status](https://www.r-pkg.org/badges/version/combinedevents)](https://CRAN.R-project.org/package=combinedevents)
-[![Travis build
-status](https://travis-ci.com/Katie-Frank/combinedevents.svg?branch=master)](https://travis-ci.com/Katie-Frank/combinedevents)
+[![Build
+Status](https://travis-ci.org/Katie-Frank/combinedevents.svg?branch=master)](https://travis-ci.org/Katie-Frank/combinedevents)
 [![Codecov test
 coverage](https://codecov.io/gh/Katie-Frank/combinedevents/branch/master/graph/badge.svg)](https://codecov.io/gh/Katie-Frank/combinedevents?branch=master)
 <!-- badges: end -->
@@ -43,7 +43,7 @@ The two main functions in the package are
   - `marks()` calculates marks
 
 Below are some quick examples. To learn more about **combinedevents**,
-see `vignette("combinedevents")`.
+see package documentation.
 
 ``` r
 library(combinedevents)
