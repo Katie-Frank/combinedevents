@@ -1,0 +1,60 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# combinedevents
+
+<!-- badges: start -->
+[![CRAN status](https://www.r-pkg.org/badges/version/combinedevents)](https://CRAN.R-project.org/package=combinedevents)
+[![Travis build status](https://travis-ci.com/Katie-Frank/combinedevents.svg?branch=master)](https://travis-ci.com/Katie-Frank/combinedevents)
+[![Codecov test coverage](https://codecov.io/gh/Katie-Frank/combinedevents/branch/master/graph/badge.svg)](https://codecov.io/gh/Katie-Frank/combinedevents?branch=master)
+<!-- badges: end -->
+
+## Overview
+
+The **combinedevents** package provides functions to calculate scores and marks for track and field combined events competitions. The functions are based on the IAAF Scoring Tables for Combined Events. 
+
+## Installation
+
+You can install the released version of **combinedevents** from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("combinedevents")
+```
+
+And the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("Katie-Frank/combinedevents")
+```
+
+## Usage
+
+The two main functions in the package are
+
+- `scores()` calculates scores
+- `marks()` calculates marks
+
+Below are some quick examples. To learn more about **combinedevents**, see `vignette("combinedevents")`.
+
+```{r example}
+library(combinedevents)
+
+# scores for men's decathlon
+
+# marks for women's heptathlon
+marks(c(900, 1014, 790, 1000, 788, 800, 1000), "female", "heptathlon")
+```
+
