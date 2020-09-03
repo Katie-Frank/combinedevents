@@ -80,7 +80,7 @@ marks <- function(scores, gender, combined_event = NULL, seconds = FALSE){
   if (gender == "male") {
     if (is.null(combined_event)) {
       if (is.null(names(scores))) {
-        stop("Every element of `scores` must be named if `combined_event` is unspecified")
+        stop("Elements of `scores` must be named if `combined_event` is unspecified")
       } else if (!all(names(scores) %in% c("100m", "LJ", "SP", "HJ", "400m",
                                            "110mH", "DT", "PV", "JT", "1500m", "200m", "60m", "60mH", "1000m"))) {
         stop("One or more invalid names for `scores`")
@@ -106,7 +106,7 @@ marks <- function(scores, gender, combined_event = NULL, seconds = FALSE){
   } else if (gender == "female") {
     if (is.null(combined_event)) {
       if (is.null(names(scores))) {
-        stop("Every element of `scores` must be named if `combined_event` is unspecified")
+        stop("Elements of `scores` must be named if `combined_event` is unspecified")
       } else if (!all(names(scores) %in% c("100m", "LJ", "SP", "HJ", "400m",
                                            "100mH", "DT", "PV", "JT", "1500m", "200m", "60mH", "800m"))) {
         stop("One or more invalid names for `scores`")
