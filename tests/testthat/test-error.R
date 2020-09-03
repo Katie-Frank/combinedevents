@@ -17,6 +17,8 @@ test_that("misuses of scores()", {
   expect_error(scores(c(10.12, 7), "female"),
                "Elements of `marks` must be named if `combined_event` is unspecified",
                fixed = TRUE)
+  expect_error(scores(c(`100m` = 12.2, 6.7), "female"),
+               "One or more invalid names for `marks`", fixed = TRUE)
   expect_error(scores(c(10.12, 7), "female", "Heptathlon"),
                "Invalid entry for `combined_event`", fixed = TRUE)
 })
