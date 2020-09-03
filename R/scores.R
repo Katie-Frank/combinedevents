@@ -42,9 +42,9 @@
 #' @export
 #' @examples
 #' # Men's decathlon
-#' scores(marks = c("100m" = 11.61, LJ = 7.32, SP = 13.17, HJ = 1.9,
-#'                  "400m" = 49.96, "110mH" = 15.32, DT = 38.18, PV = 4.6,
-#'                  JT = 58.98, "1500m" = "4:39.34"),
+#' scores(marks = c(`100m` = 11.61, LJ = 7.32, SP = 13.17, HJ = 1.9,
+#'                  `400m` = 49.96, `110mH` = 15.32, DT = 38.18, PV = 4.6,
+#'                  JT = 58.98, `1500m` = "4:39.34"),
 #'        gender = "male", combined_event = "decathlon")
 #'
 #' # Women's heptathlon
@@ -52,8 +52,8 @@
 #'        "female", "heptathlon")
 #'
 #' # Men's events
-#' scores(c("60m" = 7.09, LJ = 7, LJ = 7.03, SP = 11.8, HJ = 2,
-#'          "60mH" = 8.30, "60mH" = 9.31, PV = 4.30, "1000m" = "2:40.00"),
+#' scores(c(`60m` = 7.09, LJ = 7, LJ = 7.03, SP = 11.8, HJ = 2,
+#'          `60mH` = 8.30, `60mH` = 9.31, PV = 4.30, `1000m` = "2:40.00"),
 #'        gender = "male")
 scores <- function(marks, gender, combined_event = NULL, seconds = FALSE){
   if (!class(marks) %in% c("integer", "numeric", "character")) {

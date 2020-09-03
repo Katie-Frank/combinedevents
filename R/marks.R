@@ -57,7 +57,7 @@
 #'       gender = "male", combined_event = "heptathlon")
 #'
 #' # Women's pentathlon
-#' marks(scores = c("60mH" = 981, HJ = 875, SP = 799, LJ = 956, `800m` = 1000),
+#' marks(scores = c(`60mH` = 981, HJ = 875, SP = 799, LJ = 956, `800m` = 1000),
 #'       "female", "pentathlon")
 #'
 #' # Men's events
