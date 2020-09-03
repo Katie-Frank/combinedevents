@@ -1,0 +1,49 @@
+context("possible scores for marks()")
+
+test_that("print message for unsuitable scores", {
+  expect_message(marks(c(`100m` = 4800), "male"),
+                 "100m score must be <= 4753 points to receive a valid (positive) time",
+                 fixed = TRUE)
+  expect_message(marks(c(`400m` = 4475), "male"),
+                 "400m score must be <= 4474 points to receive a valid (positive) time",
+                 fixed = TRUE)
+  expect_message(marks(c(`110mH` = 3600), "male"),
+                 "110mH score must be <= 3566 points to receive a valid (positive) time",
+                 fixed = TRUE)
+  expect_message(marks(c(`1500m` = 3500), "male"),
+                 "1500m score must be <= 3438 points to receive a valid (positive) time",
+                 fixed = TRUE)
+  expect_message(marks(c(`200m` = 4225), "male"),
+                 "200m score must be <= 4224 points receive a valid (positive) time",
+                 fixed = TRUE)
+  expect_message(marks(c(`60m` = 4820), "male"),
+                 "60m score must be <= 4816 points to receive a valid (positive) time",
+                 fixed = TRUE)
+  expect_message(marks(c(`60mH` = 4000), "male"),
+                 "60mH score must be <= 3953 points to receive a valid (positive) time",
+                 fixed = TRUE)
+  expect_message(marks(c(`1000m` = 3460), "male"),
+                 "1000m score must be <= 3446 points to receive a valid (positive) time",
+                 fixed = TRUE)
+  expect_message(marks(c(`100mH` = 3825), "female"),
+                 "100mH score must be <= 3824 points to receive a valid (positive) time",
+                 fixed = TRUE)
+  expect_message(marks(c(`200m` = 4500), "female"),
+                 "200m score must be <= 4419 points receive a valid (positive) time",
+                 fixed = TRUE)
+  expect_message(marks(c(`800m` = 3800), "female"),
+                 "800m score must be <= 3715 points to receive a valid (positive) time",
+                 fixed = TRUE)
+  expect_message(marks(c(`100m` = 4415), "female"),
+                 "100m score must be <= 4412 points to receive a valid (positive) time",
+                 fixed = TRUE)
+  expect_message(marks(c(`400m` = 5000), "female"),
+                 "400m score must be <= 4784 points to receive a valid (positive) time",
+                 fixed = TRUE)
+  expect_message(marks(c(`1500m` = 3900), "female"),
+                 "1500m score must be <= 3882 points to receive a valid (positive) time",
+                 fixed = TRUE)
+  expect_message(marks(c(`60mH` = 3701), "female"),
+                 "60mH score must be <= 3626 points to receive a valid (positive) time",
+                 fixed = TRUE)
+})
