@@ -9,7 +9,10 @@
 
 * This is a new release.
 
-Win-builder generated 1 NOTE: "Possibly mis-spelled words in DESCRIPTION: IAAF", but the spelling is okay as IAAF is an initialism for International Association of Athletics Federation.
+In addition to the new release note, R-devel on Windows Server generated two notes:
+
+* "Possibly mis-spelled words in DESCRIPTION: IAAF (11:72)", but the spelling is okay as IAAF is an initialism for International Association of Athletics Federation.
+* "checking for future file timestamps ... NOTE unable to verify current time", but the external clock used for this check appears to be down (https://stackoverflow.com/questions/63613301/r-cmd-check-note-unable-to-verify-current-time).
 
 ## Downstream dependencies
 
