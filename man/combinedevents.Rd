@@ -13,6 +13,7 @@ Scoring Tables for Combined Events.
 \seealso{
 Useful links:
 \itemize{
+\item \url{https://katie-frank.github.io/combinedevents}
 \item \url{https://github.com/katie-frank/combinedevents}
 \item Report bugs at \url{https://github.com/katie-frank/combinedevents/issues}
 }
