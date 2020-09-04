@@ -7,12 +7,10 @@
 
 [![CRAN
 status](https://www.r-pkg.org/badges/version/combinedevents)](https://CRAN.R-project.org/package=combinedevents)
-[![Build
-Status](https://travis-ci.org/Katie-Frank/combinedevents.svg?branch=master)](https://travis-ci.org/Katie-Frank/combinedevents)
 [![R build
 status](https://github.com/Katie-Frank/combinedevents/workflows/R-CMD-check/badge.svg)](https://github.com/Katie-Frank/combinedevents/actions)
-[![Codecov test
-coverage](https://codecov.io/gh/Katie-Frank/combinedevents/branch/master/graph/badge.svg)](https://codecov.io/gh/Katie-Frank/combinedevents?branch=master)
+[![codecov](https://codecov.io/gh/Katie-Frank/combinedevents/branch/master/graph/badge.svg)](https://codecov.io/gh/Katie-Frank/combinedevents)
+
 <!-- badges: end -->
 
 ## Overview
