@@ -17,7 +17,14 @@ coverage](https://codecov.io/gh/Katie-Frank/combinedevents/branch/master/graph/b
 
 **combinedevents** is an R package to calculate scores and marks for
 track and field combined events competitions. The functions included in
-the package are based on the IAAF Scoring Tables for Combined Events.
+the package are based on the “IAAF Scoring Tables for Combined Events”.
+
+The scoring tables are available for download as a PDF:
+
+  - Go to the [Technical Information Section of the World Athletics
+    Website](https://www.worldathletics.org/about-iaaf/documents/technical-information)
+  - Select *Scoring Tables*
+  - Download *IAAF Scoring Tables for Combined Events*
 
 ## Installation
 
@@ -75,3 +82,8 @@ marks(c(900, 1014, 790, 1000, 788, 800, 1000), "female", "heptathlon")
 #> 7       800m 2:07.63  1000
 #> 8      TOTAL    <NA>  6296
 ```
+
+## References
+
+International Association of Athletics Federation. *IAAF Scoring Tables
+for Combined Events*. PDF. 2001.

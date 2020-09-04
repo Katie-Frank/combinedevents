@@ -23,7 +23,13 @@ knitr::opts_chunk$set(
 
 ## Overview
 
-**combinedevents** is an R package to calculate scores and marks for track and field combined events competitions. The functions included in the package are based on the IAAF Scoring Tables for Combined Events.
+**combinedevents** is an R package to calculate scores and marks for track and field combined events competitions. The functions included in the package are based on the "IAAF Scoring Tables for Combined Events".
+
+The scoring tables are available for download as a PDF:
+
+* Go to the [Technical Information Section of the World Athletics Website](https://www.worldathletics.org/about-iaaf/documents/technical-information)
+* Select *Scoring Tables*
+* Download *IAAF Scoring Tables for Combined Events*
 
 ## Installation
 
@@ -58,4 +64,8 @@ scores(c(10.8, 7.1, 12, 2.05, 49.5, 14.5, 35, 4.6, 40, "4:21"), "male", "decathl
 # marks for women's heptathlon
 marks(c(900, 1014, 790, 1000, 788, 800, 1000), "female", "heptathlon")
 ```
+
+## References
+
+International Association of Athletics Federation. *IAAF Scoring Tables for Combined Events*. PDF. 2001.
 

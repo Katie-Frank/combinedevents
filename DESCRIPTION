@@ -8,8 +8,8 @@ Authors@R:
            email = "katiexfrank@gmail.com",
            comment = c(ORCID = "0000-0002-0353-0328"))
 Description: Includes functions to calculate scores and marks for track and
-    field combined events competitions. The functions are based on the IAAF
-    Scoring Tables for Combined Events.
+    field combined events competitions. The functions are based on the "IAAF
+    Scoring Tables for Combined Events".
 License: GPL-3
 URL: https://katie-frank.github.io/combinedevents/, https://github.com/katie-frank/combinedevents
 BugReports: https://github.com/katie-frank/combinedevents/issues
