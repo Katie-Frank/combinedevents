@@ -1,3 +1,11 @@
+## Resubmission
+
+This is a resubmission. In this version, I have:
+
+* Removed the acronym 'IAAF' from the description field of the DESCRIPTION file.
+* Added references in the description field of the DESCRIPTION file in the form authors (year) <https:...>. There is no doi, arXiv, or ISBN for the source I reference, so that is why I use <https::...>.
+
+
 ## Test environments
 * local macOS R installation, R 4.0.2
 * Windows-latest (using GitHub Actions): R 4.0.2
