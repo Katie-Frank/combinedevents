@@ -1,7 +1,6 @@
 #' Calculate marks for track and field combined events
 #'
 #' \code{marks()} calculates marks for track and field combined events competitions.
-#' This function evolved from the IAAF Scoring Tables for Combined Events.
 #'
 #' @param scores a numeric vector of track and field scores
 #' @param gender gender of athlete; either "\code{male}" or "\code{female}"
@@ -50,6 +49,8 @@
 #'   \item{score_total}{if called with non-NULL \code{combined_event}, an integer representing the overall score
 #'   for the specified combined events competition}
 #'   \item{call}{the matched call}
+#' @references International Association of Athletics Federation (2001).
+#' \emph{IAAF Scoring Tables for Combined Events}.
 #' @export
 #' @examples
 #' # Men's heptathlon

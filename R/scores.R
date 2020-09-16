@@ -1,7 +1,6 @@
 #' Calculate scores for track and field combined events
 #'
 #' \code{scores()} calculates scores for track and field combined events competitions.
-#' This function is based on the IAAF Scoring Tables for Combined Events.
 #'
 #' @param marks a numeric or character vector of track and field
 #'   marks/performances
@@ -39,6 +38,8 @@
 #'   \item{score_total}{if called with non-NULL \code{combined_event}, an integer representing the overall score
 #'   for the specified combined events competition}
 #'   \item{call}{the matched call}
+#' @references International Association of Athletics Federation (2001).
+#' \emph{IAAF Scoring Tables for Combined Events}.
 #' @export
 #' @examples
 #' # Men's decathlon

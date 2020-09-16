@@ -7,8 +7,13 @@
 Combined Events}
 \description{
 Includes functions to calculate scores and marks for track and
-field combined events competitions. The functions are based on the "IAAF
-Scoring Tables for Combined Events".
+field combined events competitions. The functions are based on the scoring
+tables for combined events set forth by the International Association of
+Athletics Federation (2001).
+}
+\references{
+International Association of Athletics Federation (2001).
+\emph{IAAF Scoring Tables for Combined Events}.
 }
 \seealso{
 Useful links:

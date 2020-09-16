@@ -49,7 +49,6 @@ for the specified combined events competition}
 }
 \description{
 \code{marks()} calculates marks for track and field combined events competitions.
-This function evolved from the IAAF Scoring Tables for Combined Events.
 }
 \details{
 \code{marks()} can be thought of as the inverse function of \code{\link[=scores]{scores()}}: you
@@ -78,4 +77,8 @@ marks(scores = c(`60mH` = 981, HJ = 875, SP = 799, LJ = 956, `800m` = 1000),
 # Men's events
 marks(scores = c(LJ = 790, LJ = 810, HJ = 850, HJ = 900, PV = 900, PV = 915),
       "male")
+}
+\references{
+International Association of Athletics Federation (2001).
+\emph{IAAF Scoring Tables for Combined Events}.
 }

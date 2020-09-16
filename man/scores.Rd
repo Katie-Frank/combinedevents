@@ -50,7 +50,6 @@ for the specified combined events competition}
 }
 \description{
 \code{scores()} calculates scores for track and field combined events competitions.
-This function is based on the IAAF Scoring Tables for Combined Events.
 }
 \examples{
 # Men's decathlon
@@ -67,4 +66,8 @@ scores(c(14.11, 1.95, 13.96, 25.61, 6.44, 45.98, "2:07.26"),
 scores(c(`60m` = 7.09, LJ = 7, LJ = 7.03, SP = 11.8, HJ = 2,
          `60mH` = 8.30, `60mH` = 9.31, PV = 4.30, `1000m` = "2:40.00"),
        gender = "male")
+}
+\references{
+International Association of Athletics Federation (2001).
+\emph{IAAF Scoring Tables for Combined Events}.
 }
