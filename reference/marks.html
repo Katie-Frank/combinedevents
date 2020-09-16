@@ -122,7 +122,7 @@ This function evolved from the IAAF Scoring Tables for Combined Events." />
 This function evolved from the IAAF Scoring Tables for Combined Events.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>marks</span>(<span class='no'>scores</span>, <span class='no'>gender</span>, <span class='kw'>combined_event</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>seconds</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</pre>
+    <pre class="usage"><span class='fu'>marks</span>(<span class='kw'>scores</span>, <span class='kw'>gender</span>, combined_event = <span class='kw'>NULL</span>, seconds = <span class='fl'>FALSE</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -193,8 +193,9 @@ score corresponding to that mark.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'># Men's heptathlon</span>
-<span class='fu'>marks</span>(<span class='kw'>scores</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/rep.html'>rep</a></span>(<span class='fl'>800</span>, <span class='fl'>7</span>),
-      <span class='kw'>gender</span> <span class='kw'>=</span> <span class='st'>"male"</span>, <span class='kw'>combined_event</span> <span class='kw'>=</span> <span class='st'>"heptathlon"</span>)</div><div class='output co'>#&gt;   heptathlon    mark score
+<span class='fu'>marks</span>(scores = <span class='fu'><a href='https://rdrr.io/r/base/rep.html'>rep</a></span>(<span class='fl'>800</span>, <span class='fl'>7</span>),
+      gender = <span class='st'>"male"</span>, combined_event = <span class='st'>"heptathlon"</span>)
+</div><div class='output co'>#&gt;   heptathlon    mark score
 #&gt; 1        60m    7.23   802
 #&gt; 2         LJ    6.95   802
 #&gt; 3         SP   15.16   800
@@ -204,8 +205,9 @@ score corresponding to that mark.</p>
 #&gt; 7      1000m 2:46.78   800
 #&gt; 8      TOTAL    &lt;NA&gt;  5609</div><div class='input'>
 <span class='co'># Women's pentathlon</span>
-<span class='fu'>marks</span>(<span class='kw'>scores</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='kw'>`60mH`</span> <span class='kw'>=</span> <span class='fl'>981</span>, <span class='kw'>HJ</span> <span class='kw'>=</span> <span class='fl'>875</span>, <span class='kw'>SP</span> <span class='kw'>=</span> <span class='fl'>799</span>, <span class='kw'>LJ</span> <span class='kw'>=</span> <span class='fl'>956</span>, <span class='kw'>`800m`</span> <span class='kw'>=</span> <span class='fl'>1000</span>),
-      <span class='st'>"female"</span>, <span class='st'>"pentathlon"</span>)</div><div class='output co'>#&gt;   pentathlon    mark score
+<span class='fu'>marks</span>(scores = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(`60mH` = <span class='fl'>981</span>, HJ = <span class='fl'>875</span>, SP = <span class='fl'>799</span>, LJ = <span class='fl'>956</span>, `800m` = <span class='fl'>1000</span>),
+      <span class='st'>"female"</span>, <span class='st'>"pentathlon"</span>)
+</div><div class='output co'>#&gt;   pentathlon    mark score
 #&gt; 1       60mH    8.66   982
 #&gt; 2         HJ    1.72   879
 #&gt; 3         SP   14.07   799
@@ -213,8 +215,9 @@ score corresponding to that mark.</p>
 #&gt; 5       800m 2:07.63  1000
 #&gt; 6      TOTAL    &lt;NA&gt;  4616</div><div class='input'>
 <span class='co'># Men's events</span>
-<span class='fu'>marks</span>(<span class='kw'>scores</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='kw'>LJ</span> <span class='kw'>=</span> <span class='fl'>790</span>, <span class='kw'>LJ</span> <span class='kw'>=</span> <span class='fl'>810</span>, <span class='kw'>HJ</span> <span class='kw'>=</span> <span class='fl'>850</span>, <span class='kw'>HJ</span> <span class='kw'>=</span> <span class='fl'>900</span>, <span class='kw'>PV</span> <span class='kw'>=</span> <span class='fl'>900</span>, <span class='kw'>PV</span> <span class='kw'>=</span> <span class='fl'>915</span>),
-      <span class='st'>"male"</span>)</div><div class='output co'>#&gt;   event mark score
+<span class='fu'>marks</span>(scores = <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(LJ = <span class='fl'>790</span>, LJ = <span class='fl'>810</span>, HJ = <span class='fl'>850</span>, HJ = <span class='fl'>900</span>, PV = <span class='fl'>900</span>, PV = <span class='fl'>915</span>),
+      <span class='st'>"male"</span>)
+</div><div class='output co'>#&gt;   event mark score
 #&gt; 1    LJ 6.90   790
 #&gt; 2    LJ 6.99   811
 #&gt; 3    HJ 2.05   850
@@ -236,7 +239,7 @@ score corresponding to that mark.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>
