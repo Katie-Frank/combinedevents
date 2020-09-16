@@ -40,8 +40,7 @@
 
 
 <meta property="og:title" content="Calculate marks for track and field combined events — marks" />
-<meta property="og:description" content="marks() calculates marks for track and field combined events competitions.
-This function evolved from the IAAF Scoring Tables for Combined Events." />
+<meta property="og:description" content="marks() calculates marks for track and field combined events competitions." />
 
 
 
@@ -118,8 +117,7 @@ This function evolved from the IAAF Scoring Tables for Combined Events." />
     </div>
 
     <div class="ref-description">
-    <p><code>marks()</code> calculates marks for track and field combined events competitions.
-This function evolved from the IAAF Scoring Tables for Combined Events.</p>
+    <p><code>marks()</code> calculates marks for track and field combined events competitions.</p>
     </div>
 
     <pre class="usage"><span class='fu'>marks</span>(<span class='kw'>scores</span>, <span class='kw'>gender</span>, combined_event = <span class='kw'>NULL</span>, seconds = <span class='fl'>FALSE</span>)</pre>
@@ -190,6 +188,10 @@ not necessarily the same as the one input because some scores are not actually
 possible (due to rounding). In other words, not every input score is associated
 with a unique mark. When this is the case, <code>marks()</code> will return the highest
 score corresponding to that mark.</p>
+    <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
+
+    <p>International Association of Athletics Federation (2001).
+<em>IAAF Scoring Tables for Combined Events</em>.</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'># Men's heptathlon</span>
