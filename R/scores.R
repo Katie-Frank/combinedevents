@@ -62,7 +62,7 @@ scores <- function(marks, gender, combined_event = NULL, seconds = FALSE){
   if (any(marks < 0 & !is.na(marks))) {
     stop("Invalid entry for `marks`: negative mark(s) not allowed")
   }
-  if (!(seconds %in% c(TRUE, FALSE, T, F))) {
+  if (!(seconds %in% c(TRUE, FALSE))) {
     stop("Invalid entry for `seconds`")
   }
   if (is.character(marks)) {

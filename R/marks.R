@@ -70,7 +70,7 @@ marks <- function(scores, gender, combined_event = NULL, seconds = FALSE){
   if (any(scores < 0 & !is.na(scores))) {
     stop("Invalid entry for `scores`: negative score(s) not allowed")
   }
-  if (!(seconds %in% c(TRUE, FALSE, T, F))) {
+  if (!(seconds %in% c(TRUE, FALSE))) {
     stop("Invalid entry for `seconds`")
   }
   if (!isTRUE(all.equal(round(scores), scores))) {
