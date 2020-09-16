@@ -3,7 +3,7 @@
 This is a resubmission. In this version, I have:
 
 * Removed the acronym 'IAAF' from the description field of the DESCRIPTION file.
-* Added references in the description field of the DESCRIPTION file in the form authors (year) <https:...>. There is no doi, arXiv, or ISBN for the source I reference, so that is why I use <https::...>.
+* Added a reference in the description field of the DESCRIPTION file in the form authors (year) <https:...>. There is no doi, arXiv, or ISBN for the source I reference, so that is why I use <https::...>. Also, the author for the referenced source is the organization "International Association of Athletics Federation".
 
 
 ## Test environments
