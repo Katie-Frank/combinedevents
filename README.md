@@ -17,9 +17,9 @@ status](https://github.com/Katie-Frank/combinedevents/workflows/R-CMD-check/badg
 
 **combinedevents** is an R package to calculate scores and marks for
 track and field combined events competitions. The functions included in
-the package are based on the “IAAF Scoring Tables for Combined Events”.
-
-The scoring tables are available for download as a PDF:
+this package are based on the scoring tables for combined events set
+forth by the International Association of Athletics Federation (2001).
+These scoring tables are available for download as a PDF:
 
   - Go to the [Technical Information Section of the World Athletics
     Website](https://www.worldathletics.org/about-iaaf/documents/technical-information)
@@ -85,5 +85,5 @@ marks(c(900, 1014, 790, 1000, 788, 800, 1000), "female", "heptathlon")
 
 ## References
 
-International Association of Athletics Federation. *IAAF Scoring Tables
-for Combined Events*. PDF. 2001.
+International Association of Athletics Federation (2001). *IAAF Scoring
+Tables for Combined Events*.
