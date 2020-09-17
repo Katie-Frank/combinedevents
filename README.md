@@ -30,8 +30,8 @@ scoring tables are available for download as a PDF:
 
 **combinedevents** is not yet released on
 [CRAN](https://CRAN.R-project.org) but should be soon as I submitted it
-to CRAN on September 17th. In the meantime, you can install the
-development version from [GitHub](https://github.com/) with:
+to CRAN on 9/17. In the meantime, you can install the development
+version from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
