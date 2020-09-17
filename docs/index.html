@@ -82,7 +82,7 @@
 <div id="overview" class="section level2">
 <h2 class="hasAnchor">
 <a href="#overview" class="anchor"></a>Overview</h2>
-<p><strong>combinedevents</strong> is an R package to calculate scores and marks for track and field combined events competitions. The functions included in this package are based on the scoring tables for combined events set forth by the International Association of Athletics Federation (2001). These scoring tables are available for download as a PDF:</p>
+<p><strong>combinedevents</strong> is an R package to calculate scores and marks for track and field combined events competitions. The functions included in this package are based on the scoring tables for combined events created by the International Association of Athletics Federation (2001). These scoring tables are available for download as a PDF:</p>
 <ul>
 <li>Go to the <a href="https://www.worldathletics.org/about-iaaf/documents/technical-information">Technical Information Section of the World Athletics Website</a>
 </li>
@@ -95,11 +95,13 @@
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<p>You can install the released version of <strong>combinedevents</strong> from <a href="https://CRAN.R-project.org">CRAN</a> with:</p>
-<div class="sourceCode" id="cb1"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"combinedevents"</span>)</pre></div>
-<p>And the development version from <a href="https://github.com/">GitHub</a> with:</p>
-<div class="sourceCode" id="cb2"><pre class="r"><span class="co"># install.packages("devtools")</span>
+<p><strong>combinedevents</strong> is not yet released on <a href="https://CRAN.R-project.org">CRAN</a> but should be soon as I submitted it to CRAN on September 17th. In the meantime, you can install the development version from <a href="https://github.com/">GitHub</a> with:</p>
+<div class="sourceCode" id="cb1"><pre class="r"><span class="co"># install.packages("devtools")</span>
 <span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_github</a></span>(<span class="st">"Katie-Frank/combinedevents"</span>)</pre></div>
+<!-- You can install the released version of **combinedevents** from [CRAN](https://CRAN.R-project.org) with: -->
+<!-- ``` r -->
+<!-- install.packages("combinedevents") -->
+<!-- ``` -->
 </div>
 <div id="usage" class="section level2">
 <h2 class="hasAnchor">
@@ -112,7 +114,7 @@
 <code><a href="reference/marks.html">marks()</a></code> calculates marks</li>
 </ul>
 <p>Below are two quick examples. To learn more about <strong>combinedevents</strong>, see the package documentation.</p>
-<div class="sourceCode" id="cb3"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">combinedevents</span>)
+<div class="sourceCode" id="cb2"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">combinedevents</span>)
 
 <span class="co"># scores for men's decathlon</span>
 <span class="fu"><a href="reference/scores.html">scores</a></span>(<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">10.8</span>, <span class="fl">7.1</span>, <span class="fl">12</span>, <span class="fl">2.05</span>, <span class="fl">49.5</span>, <span class="fl">14.5</span>, <span class="fl">35</span>, <span class="fl">4.6</span>, <span class="fl">40</span>, <span class="st">"4:21"</span>), <span class="st">"male"</span>, <span class="st">"decathlon"</span>)

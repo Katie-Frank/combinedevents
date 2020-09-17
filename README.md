@@ -17,9 +17,9 @@ status](https://github.com/Katie-Frank/combinedevents/workflows/R-CMD-check/badg
 
 **combinedevents** is an R package to calculate scores and marks for
 track and field combined events competitions. The functions included in
-this package are based on the scoring tables for combined events set
-forth by the International Association of Athletics Federation (2001).
-These scoring tables are available for download as a PDF:
+this package are based on the scoring tables for combined events created
+by the International Association of Athletics Federation (2001). These
+scoring tables are available for download as a PDF:
 
   - Go to the [Technical Information Section of the World Athletics
     Website](https://www.worldathletics.org/about-iaaf/documents/technical-information)
@@ -28,19 +28,23 @@ These scoring tables are available for download as a PDF:
 
 ## Installation
 
-You can install the released version of **combinedevents** from
-[CRAN](https://CRAN.R-project.org) with:
-
-``` r
-install.packages("combinedevents")
-```
-
-And the development version from [GitHub](https://github.com/) with:
+**combinedevents** is not yet released on
+[CRAN](https://CRAN.R-project.org) but should be soon as I submitted it
+to CRAN on September 17th. In the meantime, you can install the
+development version from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
 devtools::install_github("Katie-Frank/combinedevents")
 ```
+
+<!-- You can install the released version of **combinedevents** from [CRAN](https://CRAN.R-project.org) with: -->
+
+<!-- ``` r -->
+
+<!-- install.packages("combinedevents") -->
+
+<!-- ``` -->
 
 ## Usage
 
