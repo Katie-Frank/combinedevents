@@ -35,7 +35,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">combinedevents</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.9000</span>
       </span>
     </div>
 
@@ -95,13 +95,11 @@
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<p><strong>combinedevents</strong> is not yet released on <a href="https://CRAN.R-project.org">CRAN</a> but should be soon as I submitted it to CRAN on 9/17. In the meantime, you can install the development version from <a href="https://github.com/">GitHub</a> with:</p>
-<div class="sourceCode" id="cb1"><pre class="r"><span class="co"># install.packages("devtools")</span>
+<p>Version 0.1.0 is on <a href="https://CRAN.R-project.org">CRAN</a> and can be installed with:</p>
+<div class="sourceCode" id="cb1"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"combinedevents"</span>)</pre></div>
+<p>The development version of <strong>combinedevents</strong> can be installed from <a href="https://github.com/">GitHub</a> with:</p>
+<div class="sourceCode" id="cb2"><pre class="r"><span class="co"># install.packages("devtools")</span>
 <span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_github</a></span>(<span class="st">"Katie-Frank/combinedevents"</span>)</pre></div>
-<!-- You can install the released version of **combinedevents** from [CRAN](https://CRAN.R-project.org) with: -->
-<!-- ``` r -->
-<!-- install.packages("combinedevents") -->
-<!-- ``` -->
 </div>
 <div id="usage" class="section level2">
 <h2 class="hasAnchor">
@@ -113,8 +111,8 @@
 <li>
 <code><a href="reference/marks.html">marks()</a></code> calculates marks</li>
 </ul>
-<p>Below are two quick examples. To learn more about <strong>combinedevents</strong>, see the package documentation.</p>
-<div class="sourceCode" id="cb2"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">combinedevents</span>)
+<p>Below are a couple of quick examples. To learn more about <strong>combinedevents</strong>, see the package documentation.</p>
+<div class="sourceCode" id="cb3"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">combinedevents</span>)
 
 <span class="co"># scores for men's decathlon</span>
 <span class="fu"><a href="reference/scores.html">scores</a></span>(<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">10.8</span>, <span class="fl">7.1</span>, <span class="fl">12</span>, <span class="fl">2.05</span>, <span class="fl">49.5</span>, <span class="fl">14.5</span>, <span class="fl">35</span>, <span class="fl">4.6</span>, <span class="fl">40</span>, <span class="st">"4:21"</span>), <span class="st">"male"</span>, <span class="st">"decathlon"</span>)
@@ -155,6 +153,8 @@
     <div class="links">
 <h2>Links</h2>
 <ul class="list-unstyled">
+<li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=combinedevents">https://​cloud.r-project.org/​package=combinedevents</a>
+</li>
 <li>Browse source code at <br><a href="https://github.com/katie-frank/combinedevents/">https://​github.com/​katie-frank/​combinedevents/​</a>
 </li>
 <li>Report a bug at <br><a href="https://github.com/katie-frank/combinedevents/issues">https://​github.com/​katie-frank/​combinedevents/​issues</a>
