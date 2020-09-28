@@ -32,18 +32,18 @@ knitr::opts_chunk$set(
 
 ## Installation
 
-**combinedevents** is not yet released on [CRAN](https://CRAN.R-project.org) but should be soon as I submitted it to CRAN on 9/17. In the meantime, you can install the development version from [GitHub](https://github.com/) with:
+Version 0.1.0 is on [CRAN](https://CRAN.R-project.org) and can be installed with:
+
+``` r
+install.packages("combinedevents")
+```
+
+The development version of **combinedevents** can be installed from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
 devtools::install_github("Katie-Frank/combinedevents")
 ```
-
-<!-- You can install the released version of **combinedevents** from [CRAN](https://CRAN.R-project.org) with: -->
-
-<!-- ``` r -->
-<!-- install.packages("combinedevents") -->
-<!-- ``` -->
 
 ## Usage
 
@@ -52,7 +52,7 @@ The two main functions in the package are
 - `scores()` calculates scores
 - `marks()` calculates marks
 
-Below are two quick examples. To learn more about **combinedevents**, see the package documentation.
+Below are a couple of quick examples. To learn more about **combinedevents**, see the package documentation.
 
 ```{r example}
 library(combinedevents)
