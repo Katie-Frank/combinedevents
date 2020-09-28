@@ -35,7 +35,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">combinedevents</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.9000</span>
       </span>
     </div>
 
@@ -95,15 +95,13 @@
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<p><strong>combinedevents</strong> is not yet released on <a href="https://CRAN.R-project.org">CRAN</a> but should be soon as I submitted it to CRAN on 9/17. In the meantime, you can install the development version from <a href="https://github.com/">GitHub</a> with:</p>
+<p>Version 0.1.0 is on <a href="https://CRAN.R-project.org">CRAN</a> and can be installed with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit">
+<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"combinedevents"</span><span class="op">)</span></pre></div>
+<p>The development version of <strong>combinedevents</strong> can be installed from <a href="https://github.com/">GitHub</a> with:</p>
+<div class="sourceCode" id="cb2"><pre class="downlit">
 <span class="co"># install.packages("devtools")</span>
-<span class="kw">devtools</span>::<span class="fu">install_github</span>(<span class="st">"Katie-Frank/combinedevents"</span>)
-</pre></div>
-<!-- You can install the released version of **combinedevents** from [CRAN](https://CRAN.R-project.org) with: -->
-<!-- ``` r -->
-<!-- install.packages("combinedevents") -->
-<!-- ``` -->
+<span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"Katie-Frank/combinedevents"</span><span class="op">)</span></pre></div>
 </div>
 <div id="usage" class="section level2">
 <h2 class="hasAnchor">
@@ -115,12 +113,12 @@
 <li>
 <code><a href="reference/marks.html">marks()</a></code> calculates marks</li>
 </ul>
-<p>Below are two quick examples. To learn more about <strong>combinedevents</strong>, see the package documentation.</p>
-<div class="sourceCode" id="cb2"><pre class="downlit">
-<span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="kw"><a href="https://katie-frank.github.io/combinedevents">combinedevents</a></span>)
+<p>Below are a couple of quick examples. To learn more about <strong>combinedevents</strong>, see the package documentation.</p>
+<div class="sourceCode" id="cb3"><pre class="downlit">
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://katie-frank.github.io/combinedevents/">combinedevents</a></span><span class="op">)</span>
 
 <span class="co"># scores for men's decathlon</span>
-<span class="fu"><a href="reference/scores.html">scores</a></span>(<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">10.8</span>, <span class="fl">7.1</span>, <span class="fl">12</span>, <span class="fl">2.05</span>, <span class="fl">49.5</span>, <span class="fl">14.5</span>, <span class="fl">35</span>, <span class="fl">4.6</span>, <span class="fl">40</span>, <span class="st">"4:21"</span>), <span class="st">"male"</span>, <span class="st">"decathlon"</span>)
+<span class="fu"><a href="reference/scores.html">scores</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">10.8</span>, <span class="fl">7.1</span>, <span class="fl">12</span>, <span class="fl">2.05</span>, <span class="fl">49.5</span>, <span class="fl">14.5</span>, <span class="fl">35</span>, <span class="fl">4.6</span>, <span class="fl">40</span>, <span class="st">"4:21"</span><span class="op">)</span>, <span class="st">"male"</span>, <span class="st">"decathlon"</span><span class="op">)</span>
 <span class="co">#&gt;    decathlon    mark score</span>
 <span class="co">#&gt; 1       100m    10.8   906</span>
 <span class="co">#&gt; 2         LJ     7.1   838</span>
@@ -135,7 +133,7 @@
 <span class="co">#&gt; 11     TOTAL    &lt;NA&gt;  7550</span>
 
 <span class="co"># marks for women's heptathlon</span>
-<span class="fu"><a href="reference/marks.html">marks</a></span>(<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">900</span>, <span class="fl">1014</span>, <span class="fl">790</span>, <span class="fl">1000</span>, <span class="fl">788</span>, <span class="fl">800</span>, <span class="fl">1000</span>), <span class="st">"female"</span>, <span class="st">"heptathlon"</span>)
+<span class="fu"><a href="reference/marks.html">marks</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">900</span>, <span class="fl">1014</span>, <span class="fl">790</span>, <span class="fl">1000</span>, <span class="fl">788</span>, <span class="fl">800</span>, <span class="fl">1000</span><span class="op">)</span>, <span class="st">"female"</span>, <span class="st">"heptathlon"</span><span class="op">)</span>
 <span class="co">#&gt;   heptathlon    mark score</span>
 <span class="co">#&gt; 1      100mH   14.56   901</span>
 <span class="co">#&gt; 2         HJ    1.83  1016</span>
@@ -144,8 +142,7 @@
 <span class="co">#&gt; 5         LJ     5.8   789</span>
 <span class="co">#&gt; 6         JT   46.87   800</span>
 <span class="co">#&gt; 7       800m 2:07.63  1000</span>
-<span class="co">#&gt; 8      TOTAL    &lt;NA&gt;  6296</span>
-</pre></div>
+<span class="co">#&gt; 8      TOTAL    &lt;NA&gt;  6296</span></pre></div>
 </div>
 <div id="references" class="section level2">
 <h2 class="hasAnchor">
@@ -159,6 +156,8 @@
     <div class="links">
 <h2>Links</h2>
 <ul class="list-unstyled">
+<li>Download from CRAN at <br><a href="https://cloud.r-project.org/package=combinedevents">https://​cloud.r-project.org/​package=combinedevents</a>
+</li>
 <li>Browse source code at <br><a href="https://github.com/katie-frank/combinedevents/">https://​github.com/​katie-frank/​combinedevents/​</a>
 </li>
 <li>Report a bug at <br><a href="https://github.com/katie-frank/combinedevents/issues">https://​github.com/​katie-frank/​combinedevents/​issues</a>
