@@ -29,8 +29,8 @@
 #'
 #' For some events, when a score is given to \code{marks()}, the score returned is
 #' not necessarily the same as the one input because some scores are not actually
-#' possible (due to rounding). In other words, not every input score is associated
-#' with a unique mark. When this is the case, \code{marks()} will return the highest
+#' possible (due to rounding). In other words, multiple input scores can be
+#' associated with a single mark. When this is the case, \code{marks()} will return the highest
 #' score corresponding to that mark.
 #' @return A list of class "\code{combined_events}" (or "\code{combined_events_null}" if \code{combined_event = NULL}) with
 #'   the following fields:
