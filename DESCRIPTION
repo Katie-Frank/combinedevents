@@ -10,8 +10,7 @@ Authors@R:
 Description: Includes functions to calculate scores and marks for track and
     field combined events competitions. The functions are based on the scoring
     tables for combined events set forth by the International Association of 
-    Athletics Federation (2001)
-    <https://www.worldathletics.org/about-iaaf/documents/technical-information>.
+    Athletics Federation (2001).
 License: GPL-3
 URL: https://katie-frank.github.io/combinedevents/, https://github.com/katie-frank/combinedevents
 BugReports: https://github.com/katie-frank/combinedevents/issues
