@@ -19,19 +19,18 @@
 #'     \code{SP}, \code{HJ}, \code{`400m`}, \code{`100mH`}, \code{DT}, \code{PV}, \code{JT}, \code{`1500m`}, \code{`200m`}, \code{`60mH`}, and \code{`800m`}.
 #'   }
 #' @param seconds a logical; if \code{TRUE}, will return all track event marks in seconds
-#' @details \code{marks()} can be thought of as the inverse function of \code{\link[=scores]{scores()}}: you
-#' give it the scores you want to obtain, and it gives you the marks you
-#' need to achieve those scores.
+#' @details \code{marks()} performs the opposite action of \code{\link[=scores]{scores()}}:
+#' you give it the scores you want to obtain, and it gives you the marks you
+#' need to achieve those scores. For track events, \code{marks()} returns the
+#' slowest time needed to achieve the input score. Similarly, for jumping and
+#' throwing events, \code{marks()} returns the shortest distance necessary to
+#' achieve the input score.
 #'
-#' For track events, \code{marks()} returns the slowest time needed to achieve the
-#' input score. Similarly, for jumping and throwing events, \code{marks()} returns the
-#' shortest distance necessary to achieve the input score.
-#'
-#' For some events, when a score is given to \code{marks()}, the score returned is
-#' not necessarily the same as the one input because some scores are not actually
-#' possible (due to rounding). In other words, multiple input scores can be
-#' associated with a single mark. When this is the case, \code{marks()} will return the highest
-#' score corresponding to that mark.
+#' For some events, when a score is given to \code{marks()}, the score returned may
+#' be different from the one input because some scores are not actually
+#' possible (due to rounding of track and field marks). When an impossible
+#' score is given to \code{marks()}, the function will return the closest higher
+#' score that corresponds to a mark.
 #' @return A list of class "\code{combined_events}" (or "\code{combined_events_null}" if \code{combined_event = NULL}) with
 #'   the following fields:
 #'   \item{results}{if called with non-NULL \code{combined_event}, a data frame with

@@ -51,19 +51,18 @@ for the specified combined events competition}
 \code{marks()} calculates marks for track and field combined events competitions.
 }
 \details{
-\code{marks()} can be thought of as the inverse function of \code{\link[=scores]{scores()}}: you
-give it the scores you want to obtain, and it gives you the marks you
-need to achieve those scores.
+\code{marks()} performs the opposite action of \code{\link[=scores]{scores()}}:
+you give it the scores you want to obtain, and it gives you the marks you
+need to achieve those scores. For track events, \code{marks()} returns the
+slowest time needed to achieve the input score. Similarly, for jumping and
+throwing events, \code{marks()} returns the shortest distance necessary to
+achieve the input score.
 
-For track events, \code{marks()} returns the slowest time needed to achieve the
-input score. Similarly, for jumping and throwing events, \code{marks()} returns the
-shortest distance necessary to achieve the input score.
-
-For some events, when a score is given to \code{marks()}, the score returned is
-not necessarily the same as the one input because some scores are not actually
-possible (due to rounding). In other words, multiple input scores can be
-associated with a single mark. When this is the case, \code{marks()} will return the highest
-score corresponding to that mark.
+For some events, when a score is given to \code{marks()}, the score returned may
+be different from the one input because some scores are not actually
+possible (due to rounding of track and field marks). When an impossible
+score is given to \code{marks()}, the function will return the closest higher
+score that corresponds to a mark.
 }
 \examples{
 # Men's heptathlon
