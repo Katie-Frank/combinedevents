@@ -1,6 +1,6 @@
 Package: combinedevents
 Title: Calculate Scores and Marks for Track and Field Combined Events
-Version: 0.1.9000
+Version: 0.1.1
 Authors@R: 
     person(given = "Katie",
            family = "Frank",
