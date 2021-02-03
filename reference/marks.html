@@ -177,17 +177,17 @@ for the specified combined events competition</p></dd>
 
     <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p><code>marks()</code> can be thought of as the inverse function of <code><a href='scores.html'>scores()</a></code>: you
-give it the scores you want to obtain, and it gives you the marks you
-need to achieve those scores.</p>
-<p>For track events, <code>marks()</code> returns the slowest time needed to achieve the
-input score. Similarly, for jumping and throwing events, <code>marks()</code> returns the
-shortest distance necessary to achieve the input score.</p>
-<p>For some events, when a score is given to <code>marks()</code>, the score returned is
-not necessarily the same as the one input because some scores are not actually
-possible (due to rounding). In other words, multiple input scores can be
-associated with a single mark. When this is the case, <code>marks()</code> will return the highest
-score corresponding to that mark.</p>
+    <p><code>marks()</code> performs the opposite action of <code><a href='scores.html'>scores()</a></code>:
+you give it the scores you want to obtain, and it gives you the marks you
+need to achieve those scores. For track events, <code>marks()</code> returns the
+slowest time needed to achieve the input score. Similarly, for jumping and
+throwing events, <code>marks()</code> returns the shortest distance necessary to
+achieve the input score.</p>
+<p>For some events, when a score is given to <code>marks()</code>, the score returned may
+be different from the one input because some scores are not actually
+possible (due to rounding of track and field marks). When an impossible
+score is given to <code>marks()</code>, the function will return the closest higher
+score that corresponds to a mark.</p>
     <h2 class="hasAnchor" id="references"><a class="anchor" href="#references"></a>References</h2>
 
     <p>International Association of Athletics Federation (2001).
