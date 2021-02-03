@@ -72,7 +72,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">combinedevents</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1</span>
       </span>
     </div>
 
@@ -80,7 +80,7 @@
       <ul class="nav navbar-nav">
         <li>
   <a href="../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
+    <span class="fas fa-home fa-lg"></span>
      
   </a>
 </li>
@@ -94,7 +94,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="https://github.com/katie-frank/combinedevents/">
-    <span class="fab fa fab fa-github fa-lg"></span>
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -120,7 +120,7 @@
     <p><code>scores()</code> calculates scores for track and field combined events competitions.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>scores</span>(<span class='no'>marks</span>, <span class='no'>gender</span>, <span class='kw'>combined_event</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>seconds</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)</pre>
+    <pre class="usage"><span class='fu'>scores</span><span class='op'>(</span><span class='va'>marks</span>, <span class='va'>gender</span>, combined_event <span class='op'>=</span> <span class='cn'>NULL</span>, seconds <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -183,10 +183,11 @@ for the specified combined events competition</p></dd>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'><span class='co'># Men's decathlon</span>
-<span class='fu'>scores</span>(<span class='kw'>marks</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='kw'>`100m`</span> <span class='kw'>=</span> <span class='fl'>11.61</span>, <span class='kw'>LJ</span> <span class='kw'>=</span> <span class='fl'>7.32</span>, <span class='kw'>SP</span> <span class='kw'>=</span> <span class='fl'>13.17</span>, <span class='kw'>HJ</span> <span class='kw'>=</span> <span class='fl'>1.9</span>,
-                 <span class='kw'>`400m`</span> <span class='kw'>=</span> <span class='fl'>49.96</span>, <span class='kw'>`110mH`</span> <span class='kw'>=</span> <span class='fl'>15.32</span>, <span class='kw'>DT</span> <span class='kw'>=</span> <span class='fl'>38.18</span>, <span class='kw'>PV</span> <span class='kw'>=</span> <span class='fl'>4.6</span>,
-                 <span class='kw'>JT</span> <span class='kw'>=</span> <span class='fl'>58.98</span>, <span class='kw'>`1500m`</span> <span class='kw'>=</span> <span class='st'>"4:39.34"</span>),
-       <span class='kw'>gender</span> <span class='kw'>=</span> <span class='st'>"male"</span>, <span class='kw'>combined_event</span> <span class='kw'>=</span> <span class='st'>"decathlon"</span>)</div><div class='output co'>#&gt;    decathlon    mark score
+<span class='fu'>scores</span><span class='op'>(</span>marks <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span>`100m` <span class='op'>=</span> <span class='fl'>11.61</span>, LJ <span class='op'>=</span> <span class='fl'>7.32</span>, SP <span class='op'>=</span> <span class='fl'>13.17</span>, HJ <span class='op'>=</span> <span class='fl'>1.9</span>,
+                 `400m` <span class='op'>=</span> <span class='fl'>49.96</span>, `110mH` <span class='op'>=</span> <span class='fl'>15.32</span>, DT <span class='op'>=</span> <span class='fl'>38.18</span>, PV <span class='op'>=</span> <span class='fl'>4.6</span>,
+                 JT <span class='op'>=</span> <span class='fl'>58.98</span>, `1500m` <span class='op'>=</span> <span class='st'>"4:39.34"</span><span class='op'>)</span>,
+       gender <span class='op'>=</span> <span class='st'>"male"</span>, combined_event <span class='op'>=</span> <span class='st'>"decathlon"</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;    decathlon    mark score
 #&gt; 1       100m   11.61   730
 #&gt; 2         LJ    7.32   891
 #&gt; 3         SP   13.17   678
@@ -199,8 +200,9 @@ for the specified combined events competition</p></dd>
 #&gt; 10     1500m 4:39.34   684
 #&gt; 11     TOTAL    &lt;NA&gt;  7465</div><div class='input'>
 <span class='co'># Women's heptathlon</span>
-<span class='fu'>scores</span>(<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='fl'>14.11</span>, <span class='fl'>1.95</span>, <span class='fl'>13.96</span>, <span class='fl'>25.61</span>, <span class='fl'>6.44</span>, <span class='fl'>45.98</span>, <span class='st'>"2:07.26"</span>),
-       <span class='st'>"female"</span>, <span class='st'>"heptathlon"</span>)</div><div class='output co'>#&gt;   heptathlon    mark score
+<span class='fu'>scores</span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='fl'>14.11</span>, <span class='fl'>1.95</span>, <span class='fl'>13.96</span>, <span class='fl'>25.61</span>, <span class='fl'>6.44</span>, <span class='fl'>45.98</span>, <span class='st'>"2:07.26"</span><span class='op'>)</span>,
+       <span class='st'>"female"</span>, <span class='st'>"heptathlon"</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;   heptathlon    mark score
 #&gt; 1      100mH   14.11   963
 #&gt; 2         HJ    1.95  1171
 #&gt; 3         SP   13.96   791
@@ -210,9 +212,10 @@ for the specified combined events competition</p></dd>
 #&gt; 7       800m 2:07.26  1005
 #&gt; 8      TOTAL    &lt;NA&gt;  6532</div><div class='input'>
 <span class='co'># Men's events</span>
-<span class='fu'>scores</span>(<span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='kw'>`60m`</span> <span class='kw'>=</span> <span class='fl'>7.09</span>, <span class='kw'>LJ</span> <span class='kw'>=</span> <span class='fl'>7</span>, <span class='kw'>LJ</span> <span class='kw'>=</span> <span class='fl'>7.03</span>, <span class='kw'>SP</span> <span class='kw'>=</span> <span class='fl'>11.8</span>, <span class='kw'>HJ</span> <span class='kw'>=</span> <span class='fl'>2</span>,
-         <span class='kw'>`60mH`</span> <span class='kw'>=</span> <span class='fl'>8.30</span>, <span class='kw'>`60mH`</span> <span class='kw'>=</span> <span class='fl'>9.31</span>, <span class='kw'>PV</span> <span class='kw'>=</span> <span class='fl'>4.30</span>, <span class='kw'>`1000m`</span> <span class='kw'>=</span> <span class='st'>"2:40.00"</span>),
-       <span class='kw'>gender</span> <span class='kw'>=</span> <span class='st'>"male"</span>)</div><div class='output co'>#&gt;   event    mark score
+<span class='fu'>scores</span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span>`60m` <span class='op'>=</span> <span class='fl'>7.09</span>, LJ <span class='op'>=</span> <span class='fl'>7</span>, LJ <span class='op'>=</span> <span class='fl'>7.03</span>, SP <span class='op'>=</span> <span class='fl'>11.8</span>, HJ <span class='op'>=</span> <span class='fl'>2</span>,
+         `60mH` <span class='op'>=</span> <span class='fl'>8.30</span>, `60mH` <span class='op'>=</span> <span class='fl'>9.31</span>, PV <span class='op'>=</span> <span class='fl'>4.30</span>, `1000m` <span class='op'>=</span> <span class='st'>"2:40.00"</span><span class='op'>)</span>,
+       gender <span class='op'>=</span> <span class='st'>"male"</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;   event    mark score
 #&gt; 1   60m    7.09   851
 #&gt; 2    LJ       7   814
 #&gt; 3    LJ    7.03   821
@@ -237,7 +240,7 @@ for the specified combined events competition</p></dd>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

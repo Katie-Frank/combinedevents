@@ -15,8 +15,7 @@
 <meta property="og:description" content="Includes functions to calculate scores and marks for track and
     field combined events competitions. The functions are based on the scoring
     tables for combined events set forth by the International Association of 
-    Athletics Federation (2001)
-    &lt;https://www.worldathletics.org/about-iaaf/documents/technical-information&gt;.">
+    Athletics Federation (2001).">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -35,7 +34,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">combinedevents</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.9000</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1</span>
       </span>
     </div>
 
@@ -43,7 +42,7 @@
       <ul class="nav navbar-nav">
 <li>
   <a href="index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
+    <span class="fas fa-home fa-lg"></span>
      
   </a>
 </li>
@@ -57,7 +56,7 @@
 <ul class="nav navbar-nav navbar-right">
 <li>
   <a href="https://github.com/katie-frank/combinedevents/">
-    <span class="fab fa fab fa-github fa-lg"></span>
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -82,24 +81,18 @@
 <div id="overview" class="section level2">
 <h2 class="hasAnchor">
 <a href="#overview" class="anchor"></a>Overview</h2>
-<p><strong>combinedevents</strong> is an R package to calculate scores and marks for track and field combined events competitions. The functions included in this package are based on the scoring tables for combined events created by the International Association of Athletics Federation (2001). These scoring tables are available for download as a PDF:</p>
-<ul>
-<li>Go to the <a href="https://www.worldathletics.org/about-iaaf/documents/technical-information">Technical Information Section of the World Athletics Website</a>
-</li>
-<li>Select <em>Scoring Tables</em>
-</li>
-<li>Download <em>IAAF Scoring Tables for Combined Events</em>
-</li>
-</ul>
+<p><strong>combinedevents</strong> is an R package to calculate scores and marks for track and field combined events competitions. The functions included in this package are based on the scoring tables for combined events created by the International Association of Athletics Federation (2001).</p>
 </div>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<p>Version 0.1.0 is on <a href="https://CRAN.R-project.org">CRAN</a> and can be installed with:</p>
-<div class="sourceCode" id="cb1"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span>(<span class="st">"combinedevents"</span>)</pre></div>
+<p>Version 0.1.1 is on <a href="https://CRAN.R-project.org">CRAN</a> and can be installed with:</p>
+<div class="sourceCode" id="cb1"><pre class="downlit">
+<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"combinedevents"</span><span class="op">)</span></pre></div>
 <p>The development version of <strong>combinedevents</strong> can be installed from <a href="https://github.com/">GitHub</a> with:</p>
-<div class="sourceCode" id="cb2"><pre class="r"><span class="co"># install.packages("devtools")</span>
-<span class="kw pkg">devtools</span><span class="kw ns">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_github</a></span>(<span class="st">"Katie-Frank/combinedevents"</span>)</pre></div>
+<div class="sourceCode" id="cb2"><pre class="downlit">
+<span class="co"># install.packages("devtools")</span>
+<span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_github</a></span><span class="op">(</span><span class="st">"Katie-Frank/combinedevents"</span><span class="op">)</span></pre></div>
 </div>
 <div id="usage" class="section level2">
 <h2 class="hasAnchor">
@@ -112,10 +105,11 @@
 <code><a href="reference/marks.html">marks()</a></code> calculates marks</li>
 </ul>
 <p>Below are a couple of quick examples. To learn more about <strong>combinedevents</strong>, see the package documentation.</p>
-<div class="sourceCode" id="cb3"><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">combinedevents</span>)
+<div class="sourceCode" id="cb3"><pre class="downlit">
+<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://katie-frank.github.io/combinedevents/">combinedevents</a></span><span class="op">)</span>
 
 <span class="co"># scores for men's decathlon</span>
-<span class="fu"><a href="reference/scores.html">scores</a></span>(<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">10.8</span>, <span class="fl">7.1</span>, <span class="fl">12</span>, <span class="fl">2.05</span>, <span class="fl">49.5</span>, <span class="fl">14.5</span>, <span class="fl">35</span>, <span class="fl">4.6</span>, <span class="fl">40</span>, <span class="st">"4:21"</span>), <span class="st">"male"</span>, <span class="st">"decathlon"</span>)
+<span class="fu"><a href="reference/scores.html">scores</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">10.8</span>, <span class="fl">7.1</span>, <span class="fl">12</span>, <span class="fl">2.05</span>, <span class="fl">49.5</span>, <span class="fl">14.5</span>, <span class="fl">35</span>, <span class="fl">4.6</span>, <span class="fl">40</span>, <span class="st">"4:21"</span><span class="op">)</span>, <span class="st">"male"</span>, <span class="st">"decathlon"</span><span class="op">)</span>
 <span class="co">#&gt;    decathlon    mark score</span>
 <span class="co">#&gt; 1       100m    10.8   906</span>
 <span class="co">#&gt; 2         LJ     7.1   838</span>
@@ -130,7 +124,7 @@
 <span class="co">#&gt; 11     TOTAL    &lt;NA&gt;  7550</span>
 
 <span class="co"># marks for women's heptathlon</span>
-<span class="fu"><a href="reference/marks.html">marks</a></span>(<span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">900</span>, <span class="fl">1014</span>, <span class="fl">790</span>, <span class="fl">1000</span>, <span class="fl">788</span>, <span class="fl">800</span>, <span class="fl">1000</span>), <span class="st">"female"</span>, <span class="st">"heptathlon"</span>)
+<span class="fu"><a href="reference/marks.html">marks</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">900</span>, <span class="fl">1014</span>, <span class="fl">790</span>, <span class="fl">1000</span>, <span class="fl">788</span>, <span class="fl">800</span>, <span class="fl">1000</span><span class="op">)</span>, <span class="st">"female"</span>, <span class="st">"heptathlon"</span><span class="op">)</span>
 <span class="co">#&gt;   heptathlon    mark score</span>
 <span class="co">#&gt; 1      100mH   14.56   901</span>
 <span class="co">#&gt; 2         HJ    1.83  1016</span>
@@ -181,6 +175,7 @@
 <li><a href="https://CRAN.R-project.org/package=combinedevents"><img src="https://www.r-pkg.org/badges/version/combinedevents" alt="CRAN status"></a></li>
 <li><a href="https://github.com/Katie-Frank/combinedevents/actions"><img src="https://github.com/Katie-Frank/combinedevents/workflows/R-CMD-check/badge.svg" alt="R build status"></a></li>
 <li><a href="https://codecov.io/gh/Katie-Frank/combinedevents"><img src="https://codecov.io/gh/Katie-Frank/combinedevents/branch/master/graph/badge.svg" alt="codecov"></a></li>
+<li><a href="https://cran.r-project.org/package=combinedevents"><img src="https://cranlogs.r-pkg.org/badges/grand-total/combinedevents" alt="Total Downloads"></a></li>
 </ul>
 </div>
 </div>
@@ -192,7 +187,7 @@
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>
