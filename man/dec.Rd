@@ -35,12 +35,12 @@ A full description of the 24 variables is below.
 \item{PV_p}{pole vault points}
 \item{JT}{javelin throw result, in meters}
 \item{JT_p}{javelin throw points}
-\item{1500m}{1500m result, in minutes}
+\item{1500m}{1500m result, in the format mm:ss.ms}
 \item{1500m_p}{1500m points}
 }
 }
 \source{
-\url{https://en.wikipedia.org/wiki/Athletics_at_the_2016_Summer_Olympics_–_Men\%27s_decathlon}
+\url{https://en.wikipedia.org/wiki/Athletics_at_the_2016_Summer_Olympics_\%2D_Men\%27s_decathlon}
 }
 \usage{
 dec
