@@ -1,7 +1,7 @@
 #' combinedevents: Calculate Scores and Marks for Track and Field
 #' Combined Events
 #'
-#' Includes functions to calculate scores and marks for track and
+#' The package includes functions to calculate scores and marks for track and
 #' field combined events competitions. The functions are based on the scoring
 #' tables for combined events set forth by the International Association of
 #' Athletics Federation (2001).
@@ -19,6 +19,6 @@
 #' }
 #'
 #' @docType package
-#' @name combinedevents
+#' @name combinedevents-package
 #' @importFrom magrittr %>%
 NULL
