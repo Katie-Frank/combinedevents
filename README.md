@@ -24,9 +24,8 @@ by the International Association of Athletics Federation (2001).
 
 ## Installation
 
-Version 0.1.1 will be on [CRAN](https://CRAN.R-project.org) soon (the
-package was submitted on 2/3). In the meantime, version 0.1.0 can be
-installed from CRAN with:
+Version 0.1.1 is on [CRAN](https://CRAN.R-project.org) and can be
+installed with:
 
 ``` r
 install.packages("combinedevents")
